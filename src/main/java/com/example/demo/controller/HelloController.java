@@ -22,4 +22,9 @@ public class HelloController {
     public String getCode(@RequestBody User user){
         return "一个小测试" + user.toString();
     }
+
+    @GetMapping("getWorld")
+    public String getWorld(){
+        return "have a good day !!";
+    }
 }
